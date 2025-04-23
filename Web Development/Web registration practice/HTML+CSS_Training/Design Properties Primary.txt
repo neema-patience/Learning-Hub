@@ -1,0 +1,7 @@
+Design Properties
+Primary Color = #171154
+Secondary color 1 = E9F7CC
+Seocndary color 2 = D1CFDD
+Background 1 = D1CFDD
+Background 2 = FFFFFF
+Font type = Lato, Sans Serif

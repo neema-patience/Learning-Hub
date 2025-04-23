@@ -1,0 +1,25 @@
+# Suggestions to Improve the Palindrome Checker Application
+
+1. **Input Normalization**:
+   - Update the `check()` function to normalize the input by removing spaces and punctuation, and converting it to lowercase.
+
+2. **User Feedback**:
+   - Modify the `check()` function to display the result in a dedicated result area instead of using `alert()`. This will enhance user experience.
+
+3. **History Table**:
+   - Implement a table to keep track of previously checked words and their results. This table should be displayed just beneath the checker.
+
+4. **Styling Enhancements**:
+   - Ensure that the result display area and history table are styled appropriately for better visibility and user experience.
+
+5. **Accessibility Improvements**:
+   - Confirm that the input field and result display are accessible, including proper labeling.
+
+6. **Reset Functionality**:
+   - Ensure the reset button clears both the input field and the result display area, as well as the history table if necessary.
+
+7. **Mobile Responsiveness**:
+   - Ensure that the layout is responsive and looks good on mobile devices.
+
+8. **Testing**:
+   - Test the application thoroughly to ensure that all functionalities work as expected and that the user interface is user-friendly.

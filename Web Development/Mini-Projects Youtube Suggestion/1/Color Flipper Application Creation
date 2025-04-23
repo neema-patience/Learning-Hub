@@ -1,0 +1,33 @@
+ # Color Flipper Application Creation
+
+ ## Create the HTML Structure:
+  Create main.html:
+    1. Start with the HTML5 doctype declaration: <!DOCTYPE html>.
+	2. Add the opening <html> tag with the lang attribute set to "en".
+
+  Inside the <head> section:
+    1.Add a <meta charset="UTF-8"> for character encoding.
+	2. Add a <meta name="viewport" content="width=device-width, 3. initial-scale=1.0"> for responsive design.
+	3. Add a <title> tag for the application (e.g., <title>Color Flipper</title>).
+  Inside the <body> section:
+	1. Add a heading using <h3>Color Flipper</h3>.
+	2. Create a <div> to hold the buttons.
+	3. Add buttons for each color with unique IDs and onclick attributes to call the setColor function.
+	4. Add a <div> with an ID of colorDisplay to show the selected color.
+	5. Include a <script> tag to link to the index.js file.
+
+  Add CSS Styles:
+	1. Inside the <head> section, add a <style> tag.
+	2. Define styles for the buttons (e.g., background colors, border radius, width, height, and margin).
+	3. Ensure buttons are displayed vertically by setting display: block;.
+
+Create index.js:
+	1. Start by creating a constant for the body element: const body = document.getElementsByTagName("body")[0];.
+	2. Create a function called setColor(name):
+	3. Set the background color of the body based on the name parameter.
+	4. Change the text color for readability based on the selected color.
+	5. Update the colorDisplay element to show the selected color.
+	6. Create a function called randomColor():
+	7. Generate random RGB values for red, green, and blue.
+	8. Set the background color to the generated color.
+	9. Update the colorDisplay element to show the random color.

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input {
+            padding: 10px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px;
+        }
+        /* Removed the result display div */
+
+    </style>
+</head>
+<body>
+    <h1>Palindrome Checker</h1>
+    <input id="input" type="text" placeholder="Type Something" aria-label="Input for palindrome check"/>
+    <button onclick="check()">Check</button>
+
+    <button onclick="document.getElementById('input').value=''; document.getElementById('result').innerText='';">Reset</button>
+    <!-- Removed the result display div -->
+
+    <table id="history" style="border-collapse: collapse; width: 100%; border: 1px solid black;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black; padding: 8px; text-align: left; border-right: 1px solid black; border-bottom: 1px solid black;">Checked Word</th>
+
+                <th style="border: 1px solid black; padding: 8px; text-align: left;">Result</th>
+            </tr>
+        </thead>
+    <tbody>
+        <!-- Removed the initial empty row -->
+
+    </table>
+    
+</body>
+</html>

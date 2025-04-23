@@ -1,0 +1,18 @@
+# Suggestions to Improve the Palindrome Checker Application
+
+1. **Input Normalization**:
+   - Update the `check()` function to normalize the input by removing spaces and punctuation, and converting it to lowercase.
+
+2. **History Table**:
+   - Implement a table to keep track of previously checked words and their results in the first row. History should be beneath the checked word
+
+3. **Styling Enhancements**:
+   - Ensure that the result display area and history table are styled appropriately for better visibility and user experience.
+
+
+6. **Reset Functionality**:
+   - Ensure a word cannot be repeated if it is in the history record. Instead, highlight the word. 
+
+
+8. **Testing**:
+   - Test the application thoroughly to ensure that all functionalities work as expected and that the user interface is user-friendly.
