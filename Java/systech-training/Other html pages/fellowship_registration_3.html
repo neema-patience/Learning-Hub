@@ -1,0 +1,107 @@
+<!-- fellowship_registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fellowship Church Registration</title>
+    <style>
+        /* Add styles for the entire page */
+        body {
+            font-family: Lato, Sans Serif;
+            background-color: #D1CFDD;
+        }
+        /* Add styles for each page */
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 40px auto;
+        }
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .container input[type="text"], .container input[type="email"], .container input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+        <form>
+            <div class="mb-4">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" required>
+            </div>
+            <div class="mb-4">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" required>
+            </div>
+            <div class="mb-4">
+                <label for="postal-address">Postal Address:</label>
+                <input type="text" id="postal-address" required>
+            </div>
+            <div class="mb-4">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="mb-4">
+                <label for="mobile-phone-number">Mobile Phone Number:</label>
+                <input type="tel" id="mobile-phone-number" required>
+            </div>
+            <div class="mb-4">
+                <label for="residential-address">Residential Address (Area Name, Road Name, Estate Name and House Number):</label>
+                <input type="text" id="residential-address" required>
+            </div>
+            <div class="mb-4">
+                <label for="marital-status">Marital Status:</label>
+                <select id="marital-status" required>
+                    <option value="">Select Marital Status</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                </select>
+            </div>
+            <button type="submit">Proceed to Step 2</button>
+        </form>
+    </div>
+</body>
+</html>

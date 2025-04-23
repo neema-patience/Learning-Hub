@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching myself JavaScript</title>
+</head>
+<body>
+    <h1>Hello, JavaScript!</h1>
+    
+    <!-- First demo paragraph -->
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+    
+    <p>In this case, JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <!-- Button to turn on the light -->
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    
+    <!-- Image representing the light -->
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+    <!-- Button to turn off the light -->
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+    
+    <p></p>
+    <!-- Second demo to change font size -->
+     <p id="demo2">JavaScript can change the style of an HTML element</p>
+    <button onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me To Change Font!</button>
+    
+    <!-- Third demo to hide an element -->
+    <p id="demo3">JavaScript can hide HTML elements.</p>
+    <button onclick="document.getElementById('demo3').style.display='none'">Hide</button>
+
+    <!--Fourth demo to show an element-->
+    <p>JavaScript can show Hidden HTML elements.</p>
+
+    <p id="demo4" style="display:none">Hello JavaScript</p>
+
+    <button type="button"onclick="document.getElementById('demo4').style.display='block'">Click To Show Hidden HTML element </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

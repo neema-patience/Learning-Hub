@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+  /* Set the font family to Arial, sans-serif */
+  font-family: Arial, sans-serif;
+  /* Set the background color to a light gray */
+  background-color: #f8f8f8;
+  /* Remove margin and padding from the body */
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the header section */
+.header {
+  /* Set the background color to white */
+  background-color: white;
+  /* Add padding to the header */
+  padding: 10px 20px;
+  /* Display the header as a flex container - A header is often set as a flex container because it allows for easy and responsive alignment of its child elements (like logo, navigation links, buttons) across different screen sizes, making it simple to distribute space evenly and position items precisely within the header area, regardless of device resolution; essentially, flexbox provides a flexible layout that adapts well to various screen widths without needing complex positioning techniques. 
+*/
+  display: flex;
+  /* Justify the content to be spaced between elements - use CSS styling, specifically the "justify-content" property, to evenly distribute space between multiple elements within a container, ensuring that the available space is divided equally between each element, placing them apart from one another throughout the container's available area*/
+  justify-content: space-between;
+  /* Align the items to be centered vertically */
+  align-items: center;
+  /* Add a bottom border to the header */
+  border-bottom: 1px solid #ddd;
+}
+
+/* Styles for the image in the header */
+.header img {
+  /* Set the height of the image to 50px */
+  height: 50px;
+}
+
+/* Styles for the navigation links in the header */
+.header nav a {
+  /* Add margin to the links */
+  margin: 0 10px;
+  /* Remove text decoration from the links */
+  text-decoration: none;
+  /* Set the color of the links to a dark gray */
+  color: #333;
+  /* Make the links bold */
+  font-weight: bold;
+}
+
+/* Default layout for desktop */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.sidebar {
+  /* Set the width of the sidebar to 200px */
+  width: 200px;
+  /* Add margin to the right of the sidebar */
+  margin-right: 20px;
+  /* Set the color of the sidebar text to a dark gray */
+  color: #333;
+}
+
+/* Styles for the h2 elements in the sidebar */
+.sidebar h2 {
+  /* Set the font size of the h2 elements to 18px */
+  font-size: 18px;
+  /* Add margin to the bottom of the h2 elements */
+  margin-bottom: 10px;
+}
+
+/* Styles for the form container */
+.form-container {
+  /* Set the background color of the form container to white */
+  background-color: white;
+  /* Add padding to the form container */
+  padding: 20px;
+  /* Add a border radius to the form container */
+  border-radius: 10px;
+  /* Add a box shadow to the form container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Set the width of the form container to 600px */
+  width: 600px;
+}
+
+.progress-bar{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px  0;
+}
+
+.progress-bar div{
+  width: 18%
+
+}
+
+/* Styles for the form group */
+.form-group {
+  /* Display the form group as a flex container */
+  display: flex;
+  /* Justify the content to be spaced between elements */
+  justify-content: space-between;
+  /* Add margin to the bottom of the form group */
+  margin-bottom: 15px;
+}
+
+/* Styles for the label elements in the form group */
+.form-group label {
+  /* Set the width of the label elements to 30% */
+  width: 30%;
+  /* Set the font size of the label elements to 14px */
+  font-size: 14px;
+  /* Set the color of the label elements to a dark gray */
+  color: #333;
+}
+
+/* Styles for the input and select elements in the form group */
+.form-group input, .form-group select {
+  /* Set the width of the input and select elements to 65% */
+  width: 65%;
+  /* Add padding to the input and select elements */
+  padding: 10px;
+  /* Add a border to the input and select elements */
+  border: 1px solid #ddd;
+  /* Add a border radius to the input and select elements */
+  border-radius: 5px;
+  /* Set the background color of the input and select elements to a light gray */
+  background-color: #f0f8e8;
+}
+
+/* Styles for the buttons */
+.buttons {
+  /* Display the buttons as a flex container */
+  display: flex;
+  /* Justify the content to be flex-end */
+  justify-content: flex-end;
+}
+
+/* Styles for the button elements */
+.buttons button {
+  /* Add padding to the button elements - Padding is the space between the content of an element and its border. It can be set for all four sides: top, right, bottom, and left.*/
+  padding: 10px 20px;
+  /* Remove border from the button elements */
+  border: none;
+  /* Add a border radius to the button elements */
+  border-radius: 5px;
+  /* Set the font size of the button elements to 14px */
+  font-size: 14px;
+  /* Make the button elements a cursor pointer */
+  cursor: pointer;
+}
+
+/* Styles for the next button */
+.buttons .next {
+  /* Set the background color of the next button to a dark blue */
+  background-color: #2c2c6c;
+  /* Set the color of the next button to white */
+  color: white;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  /* Styles for the container on mobile */
+  .container {
+    /* Change the flex direction to column */
+    flex-direction: column;
+    /* Add padding to the container on mobile */
+    padding: 10px;
+  }
+
+  /* Styles for the sidebar on mobile */
+  .sidebar {
+    width: 100%;
+    /* Add margin to the bottom of the sidebar on mobile */
+    margin-bottom: 20px;
+  }
+
+  /* Styles for the form container on mobile */
+  .form-container {
+    /* Set the width of the form container to 100% on mobile */
+    width: 100%;
+    /* Add padding to the form container on mobile */
+    padding: 15px;
+  }
+
+  /* Styles for the form group on mobile */
+  .form-group {
+    /* Change the flex direction to column */
+    flex-direction: column;
+    /* Justify the content to be flex-start */
+    justify-content: flex-start;
+  }
+
+  /* Styles for the label elements in the form group on mobile */
+  .form-group label {
+    /* Set the width of the label elements to 100% on mobile */
+    width: 100%;
+    /* Add margin to the bottom of the label elements on mobile */
+    margin-bottom: 5px;
+  }
+
+  /* Styles for the input and select elements in the form group on mobile */
+  .form-group input, .form-group select {
+    /* Set the width of the input and select elements to 100% on mobile */
+    width: 100%;
+  }
+
+  /* Styles for the buttons on mobile */
+  .buttons {
+    /* Justify the content to be center */
+    justify-content: center;
+  }
+
+  /* Styles for the button elements on mobile */
+  .buttons button {
+    /* Set the width of the button elements to 100% on mobile */
+    width: 100%;
+  }
+}

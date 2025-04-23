@@ -1,0 +1,175 @@
+/* Default styles for mobile (small screens) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header img {
+    height: 50px;
+  }
+  
+  .header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Make the layout stack vertically on mobile */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  /* Sidebar and form will stack in mobile */
+  .sidebar {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Add space between sidebar and form */
+    color: #333;
+  }
+  
+  .sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width on mobile */
+  }
+  
+  .progress-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar div {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .progress-bar .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #2c2c6c;
+    display: inline-block;
+    line-height: 26px;
+    font-size: 18px;
+    color: #2c2c6c;
+  }
+  
+  .progress-bar .line {
+    height: 2px;
+    background-color: #2c2c6c;
+    flex-grow: 1;
+    margin: 0 5px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input */
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    width: 100%; /* Full width label on mobile */
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px; /* Add space between label and input */
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f8e8;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* Stack buttons on mobile */
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add space between buttons */
+  }
+  
+  .buttons .back {
+    background-color: #d3d3e7;
+    color: #333;
+  }
+  
+  .buttons .next {
+    background-color: #2c2c6c;
+    color: white;
+  }
+  
+  /* Styles for desktop (screens 1024px and above) */
+  @media (min-width: 1024px) {
+    .container {
+      flex-direction: row; /* Place sidebar and form side by side */
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .sidebar {
+      width: 200px; /* Fixed width for sidebar on desktop */
+      margin-right: 20px;
+    }
+  
+    .form-container {
+      width: 600px; /* Fixed width for form on desktop */
+    }
+  
+    .form-group {
+      flex-direction: row; /* Label and input side by side on desktop */
+    }
+  
+    .form-group label {
+      width: 30%; /* Label takes 30% of the width */
+    }
+  
+    .form-group input,
+    .form-group select {
+      width: 65%; /* Input takes 65% of the width */
+    }
+  
+    .buttons {
+      flex-direction: row; /* Buttons side by side on desktop */
+      margin-bottom: 0;
+    }
+  
+    .buttons button {
+      margin-bottom: 0;
+    }
+  }
+  
